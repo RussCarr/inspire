@@ -6,34 +6,53 @@ function TodoController() {
 	// toggleTodoStatus takes in a todo marks its status as completed and puts it to the server
 	// removeTodo takes in a todoId and sends a delete request to the server
 	// **** HINT: Everytime you make a change to any todo don't forget to get the todo list again
+
 	var todoService = new TodoService()
 
 	// Use this getTodos function as your callback for all other edits
-	function getTodos(){
+	function getTodos() {
 		//FYI DONT EDIT ME :)
 		todoService.getTodos(draw)
 	}
 
 	function draw(todos) {
-		//WHAT IS MY PURPOSE?
-		//BUILD YOUR TODO TEMPLATE HERE
+		console.log('im here at to do')
 		var template = ''
-		//DONT FORGET TO LOOP
+		todoList = document.getElementById('todo')
+		for (let i = 0; i < todos.length; i++) {
+			const todo = todos[i];
+			template = `
+			<p>Hello World</p>
+			`
+			}
+
+	todoList.innerHTML = template
 	}
 
 	this.addTodoFromForm = function (e) {
 		e.preventDefault() // <-- hey this time its a freebie don't forget this
 		// TAKE THE INFORMATION FORM THE FORM
+		
 		var form = e.target
 		var todo = {
+			task: ""
+
 			// DONT FORGET TO BUILD YOUR TODO OBJECT
 		}
-
+		var template = ''
+		template = `
+		<h5>To do List:</h5>
+					<form onsubmit="">
+					<lable for="task">To do</lable>
+					<input type="text" name="task" required>
+					<button type="submit">Add an item</button>	
+					</form>`
 		//PASSES THE NEW TODO TO YOUR SERVICE
 		//DON'T FORGET TO REDRAW THE SCREEN WITH THE NEW TODO
 		//YOU SHOULDN'T NEED TO CHANGE THIS
 		todoService.addTodo(todo, getTodos)
-		                         //^^^^^^^ EXAMPLE OF HOW TO GET YOUR TOODOS AFTER AN EDIT
+		//^^^^^^^ EXAMPLE OF HOW TO GET YOUR TOODOS AFTER AN EDIT
+	
 	}
 
 	this.toggleTodoStatus = function (todoId) {
@@ -49,5 +68,18 @@ function TodoController() {
 	}
 
 	// IF YOU WANT YOUR TODO LIST TO DRAW WHEN THE PAGE FIRST LOADS WHAT SHOULD YOU CALL HERE???
+
+	this.getTodosToggle = function getTodosToggle() {
+		
+		var list = document.getElementById('todo')
+		if (list.style.display === "none"){
+			list.style.display = "block";
+		}else {
+			list.style.display = "none";
+		}
+			//FYI DONT EDIT ME :)
+		debugger
+			todoService.getTodos(draw)
+	}
 
 }

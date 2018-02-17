@@ -10,6 +10,8 @@ function TodoService() {
 	}
 
 	this.getTodos = function (draw) {
+		
+		console.log('getting todos')
 		$.get(baseUrl)
 			.then(function (res) { // <-- WHY IS THIS IMPORTANT????
 				

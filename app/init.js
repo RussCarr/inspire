@@ -1,9 +1,9 @@
 // HEY WHERE ARE ALL OF YOUR CONTROLLERS??
 var app = {
-  controllers:{
+  controllers: {
     //weatherController: new WeatherController(),
-    imageController: new ImageController(),
-    quoteController: new QuoteController(),
-    //TodoController: new TodoController()
+    //imageController: new ImageController(),
+    //quoteController: new QuoteController(),
+    todoController: new TodoController()
   }
 }

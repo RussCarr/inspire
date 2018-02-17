@@ -5,7 +5,7 @@ function ImageController() {
 	function draw(res) {
 		var image = res
 		var imageUrl = "url(" + image.url + ")"
-		body = document.getElementById("body")
+		var body = document.getElementById("body")
 		body.style.backgroundImage = imageUrl;
 		body.style.backgroundAttachment = "fixed";
 		body.style.backgroundSize = "100%"

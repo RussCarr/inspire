@@ -1,1 +1,1 @@
-.quote{text:black;background:white}
+#quote{display:flex;justify-content:center}.quote{text:black;background:white;width:50%}.weather{text:black;display:flex;justify-content:flex-end}.weather-bg{background-color:white}.section{height:1040px;background:white}.todo{display:none;text:black;background:white;display:flex;justify-content:flex-end;width:4rem;padding:50px 0;text-align:center;background-color:lightblue;margin-top:20px}.footer{display:flex;justify-content:center;align-items:flex-end}

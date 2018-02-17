@@ -11,32 +11,39 @@
 	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-
 <body onload="app.controllers.imageController.getImage()" id="body">
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<div id="weather">
-					Your Weather Template
+				<div class="weather" id="weather">
+
 				</div>
 			</div>
 
 		</div>
+		<div class="row section">
+			<div class="col text-center">
+				<h1>Hello world</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col footer">
+				<div class="text-center" id="quote">
+
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div id="todo">
+						<h6>To Do Tasks</h6>
+					</div>
+					<button onclick="app.controllers.todoController.getTodosToggle()">To Do Tasks</button>
+
+				</div>
+
+			</div>
+		</div>
 	</div>
-
-
-	<div id="quote">
-		The Quote
-	</div>
-
-	<div id="todo">
-		<form onsubmit=""></form>
-		A Todo List
-	</div>
-
-
-
-
 	<!--JS Libraries-->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<!--Services-->
