@@ -7,7 +7,7 @@ function QuoteController(){
 	var quoteElem = document.getElementById('quote')
 		template =''
 	template = `
-	<div class="card quote text-center">
+	<div class="quote text-center">
 	<h4>${quote.quote}</h4>
 	<h6>${quote.author}</h6>
 	</div>

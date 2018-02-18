@@ -10,10 +10,10 @@ function WeatherController(){
 		var currentTemp = Math.floor(tempCovertedToFahernheit);
 		tempElem= document.getElementById('weather')
 		template = `
-		<div class="weather-bg">
-		<h3>${weather.name}</h3>
-		<h4>${currentTemp}</h4>
-			</div>	
+		
+		<h3>${weather.name} </h3>
+		<h4>${currentTemp}°</h4>
+			
 		`
 		tempElem.innerHTML = template
 		//What can you do with this weather object?

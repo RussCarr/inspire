@@ -1,48 +1,67 @@
-#quote
+// quote
+    #quote
     display: flex
     justify-content: center
 .quote
     text: black
+    // background: white
+    font-size: 10px
+.quote-box:hover 
     background: white
-    width: 50%
-    
-    
-.weather
+  
+.quote-box
+    position: fixed
+    left: 0
+    bottom: 0
+    z-index: 1030
+// weather 
+#weather
     text: black
     display: flex
-    justify-content: flex-end
-.weather-bg
-    background-color: white
-.section 
-    height: 1040px
+    justify-content: center
+#weather:hover
     background: white
-
+// todo
 #todo
     display: none
-// .todo
-//     text: black
-//     background: white
-//     display: flex
-//     justify-content: flex-end
-//     width: 4rem
-//     padding: 50px 0
-//     text-align: center
-//     background-color: lightblue
-//     margin-top: 20px
-.footer 
-    display: flex
-    justify-content: center
-    align-items: flex-end
+
 .box
-    
+    display: flex
+    background: white
     outline-width: 2px
     outline-color: black
     outline-style: solid
     width: 400px
+.box:hover
+    background: white
 .taskCard
     display: flex
     width: 200px 
     font-size: 20px
+.todo-list
+    position: fixed
+    right: 0
+    bottom: 0
+    z-index: 1030
+#checkbox
+    margin-right: .5rem
+    margin-bottom: 1rem
 
+// clock
+#txt
+    font-size: 80px
+#txt:hover
+    background: white
+section 
+    height: 800px
+    display: flex
+    justify-content: center
+    align-items: center
   
-	
+input[type=checkbox]
+    font-color: grey
+//  /* Toggled State */
+
+input[type=checkbox]:checked
+    background: red
+    text-decoration: line-through
