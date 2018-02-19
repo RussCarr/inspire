@@ -86,15 +86,7 @@ function TodoController() {
 	
 	this.toggleTodoStatus = function (todoId) {
 	
-		// var todoCompleted = ""
-		// console.log(todoId)
-		// if (document.getElementById('checkbox').checked = true) {
-		// 	todoCompleted = true;
-		// } else {
-		// 	todoCompleted = false;
-		// }
-
-		todoService.toggleTodoStatus(todoId)
+		todoService.toggleTodoStatus(todoId,getTodos)
 		
 	}
 
